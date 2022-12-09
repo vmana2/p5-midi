@@ -1,6 +1,8 @@
 
 let piano_init = false;
 let synth;
+var list = [30, 40, 50, 60, 70, 80]
+var color = ['red', 'blue']
 //default function plays note on keypress
 
 function triggerNote(note, midi = true) {
@@ -18,7 +20,8 @@ function triggerNote(note, midi = true) {
   
     synth.triggerAttack(note.name + note.octave);
     
-
+    fill('red')
+    circle(list[1], list[3], list[5])
 
     //Show what we are receiving
     console.log(
